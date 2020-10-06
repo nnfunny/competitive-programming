@@ -19,7 +19,7 @@
     </a>
 </p>
 
-Hi. Welcome to my `collection` of problems that I solved on several online programming competeive platforms.
+Hi. Welcome to my `collection` of problems that I solved on several online programming competitive platforms.
 
 This `repository` takes snapshots of my progress of practicing DnA problems and attending online contests.
 

@@ -1,7 +1,7 @@
-<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 35px">
+<p align="center">
     <img src="img/CP.svg" />
-</div>
-<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 35px">
+</p>
+<p align="center">
     <a href="https://codeforces.com/" target="_blank">
         <img src="https://img.shields.io/badge/-CodeForces-blue" style="margin: 0 2.5px">
     </a>
@@ -17,7 +17,7 @@
     <a href="https://binarysearch.com/" target="_blank">
         <img src="https://img.shields.io/badge/-Binary-yellow" style="margin: 0 2.5px">
     </a>
-</div>
+</p>
 
 Hi. Welcome to my `collection` of problems that I solved on several online programming competeive platforms.
 

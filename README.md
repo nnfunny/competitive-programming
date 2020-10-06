@@ -32,6 +32,7 @@ This `repository` takes snapshots of my progress of practicing DnA problems and 
 · [#divide-and-conquer](#divide-and-conquer) 
 · [#greedy](#greedy) 
 · [#data-struture](#data-struture) 
+· [#miscellaneous](#miscellaneous)
 
 <h3 id="dynamic-programming">Dynamic Programming</h3>
 <h3 id="geometry">Geometry</h3>
@@ -41,3 +42,4 @@ This `repository` takes snapshots of my progress of practicing DnA problems and 
 <h3 id="grah">Graph</h3>
 <h3 id="greedy">Greedy</h3>
 <h3 id="data-struture">Data Structure</h3>
+<h3 id="miscellaneous">Miscellaneous</h3>

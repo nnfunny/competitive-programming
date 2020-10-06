@@ -33,7 +33,7 @@ This `repository` takes snapshots of my progress of practicing DnA problems and 
 · [#greedy](#greedy) 
 · [#data-struture](#data-struture) 
 
-<h3 id="dynamic-programming">Dynamic Programming </h3>
+<h3 id="dynamic-programming">Dynamic Programming</h3>
 <h3 id="geometry">Geometry</h3>
 <h3 id="math">Math</h3>
 <h3 id="brute-force">Brute-force</h3>

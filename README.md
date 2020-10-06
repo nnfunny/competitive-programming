@@ -24,6 +24,7 @@ Hi. Welcome to my `collection` of problems that I solved on several online progr
 This `repository` takes snapshots of my progress of practicing DnA problems and attending online contests.
 
 <h2>Some problems are categorized into topics</h2>
+
 · [#dynamic-programming](#dynamic-programming)
 · [#geometry](#geometry)
 · [#math](#math)
@@ -32,7 +33,7 @@ This `repository` takes snapshots of my progress of practicing DnA problems and 
 · [#greedy](#greedy) 
 · [#data-struture](#data-struture) 
 
-<h3 id="dynamic-programming">Dynamic Programming</h3>
+<h3 id="dynamic-programming">Dynamic Programming </h3>
 <h3 id="geometry">Geometry</h3>
 <h3 id="math">Math</h3>
 <h3 id="brute-force">Brute-force</h3>

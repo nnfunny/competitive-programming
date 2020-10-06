@@ -10,9 +10,9 @@
 #include <list>
 #include <stack>
 #include <map>
-#include <unordered_map>
+#include <unordered_map> 
 #include <set>
-#include <unordered_set>
+#include <unordered_set> 
 #include <functional>
 #include <numeric>
 #include <utility>
@@ -28,27 +28,23 @@ using namespace std;
 template<typename T1,typename T2> inline void chmin(T1 &a,T2 b){if(a>b) a=b;}
 template<typename T1,typename T2> inline void chmax(T1 &a,T2 b){if(a<b) a=b;}
 #define ll long long
-const char newl = '\n';
+#define new '\n'
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
 
-    int m, n;
-    cin >> n >> m;
+    int n, pre_h, pre_m;
+    int h, m;
+    cin >> n >> pre_h >> pre_m;
 
-    vector<int> v(n);
-    unordered_set<int> s;
-    for(int i = 0; i < n; i++)
-        cin >> v[i];
-    for(int i = n-1; i >= 0; i--) {
-        s.insert(v[i]);
-        v[i] = int(s.size());
+    int cnt = 1;
+    for(int i = 1; i < n; i++) {
+        cin >> h >> m;
+        if(h==pre_h && m==pre_m)
+            cnt++;
+        pre_m = m;
+        pre_h = h;
     }
-    
-    for(int i = 0; i < m; i++) {
-        int num;
-        cin >> num;
-        cout << v[num-1] << newl;
-    }
+    cout << cnt;
 }

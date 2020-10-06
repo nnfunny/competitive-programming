@@ -10,9 +10,9 @@
 #include <list>
 #include <stack>
 #include <map>
-#include <unordered_map>
+#include <unordered_map> 
 #include <set>
-#include <unordered_set>
+#include <unordered_set> 
 #include <functional>
 #include <numeric>
 #include <utility>
@@ -28,27 +28,25 @@ using namespace std;
 template<typename T1,typename T2> inline void chmin(T1 &a,T2 b){if(a>b) a=b;}
 template<typename T1,typename T2> inline void chmax(T1 &a,T2 b){if(a<b) a=b;}
 #define ll long long
-const char newl = '\n';
+#define new '\n'
 
+const ll mod = 1000000007;
+ll x, y, n;
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
 
-    int m, n;
-    cin >> n >> m;
+    cin >> x >> y >> n;
 
-    vector<int> v(n);
-    unordered_set<int> s;
-    for(int i = 0; i < n; i++)
-        cin >> v[i];
-    for(int i = n-1; i >= 0; i--) {
-        s.insert(v[i]);
-        v[i] = int(s.size());
-    }
-    
-    for(int i = 0; i < m; i++) {
-        int num;
-        cin >> num;
-        cout << v[num-1] << newl;
-    }
+    ll ans;
+    vector<int> v(7);
+    v[1] = x;
+    v[2] = y;
+    v[3] = y - x;
+    v[4] = -x;
+    v[5] = -y;
+    v[0] = x - y;
+
+    ans = v[n % 6] % mod;
+    cout << ans;
 }

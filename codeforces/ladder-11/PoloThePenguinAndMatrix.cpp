@@ -10,9 +10,9 @@
 #include <list>
 #include <stack>
 #include <map>
-#include <unordered_map>
+#include <unordered_map> 
 #include <set>
-#include <unordered_set>
+#include <unordered_set> 
 #include <functional>
 #include <numeric>
 #include <utility>
@@ -28,27 +28,28 @@ using namespace std;
 template<typename T1,typename T2> inline void chmin(T1 &a,T2 b){if(a>b) a=b;}
 template<typename T1,typename T2> inline void chmax(T1 &a,T2 b){if(a<b) a=b;}
 #define ll long long
-const char newl = '\n';
+#define new '\n'
 
+const int nxM = 100 * 100 + 1;
+int arr[nxM], m, n, d;
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
 
-    int m, n;
-    cin >> n >> m;
+    cin >> m >> n >> d;
+    for(int i = 0; i < m*n; i++) {
+        cin >> arr[i];
+        if(arr[i] % d !=0) {
+            cout << -1;
+            return 0;
+        }
+    }
 
-    vector<int> v(n);
-    unordered_set<int> s;
-    for(int i = 0; i < n; i++)
-        cin >> v[i];
-    for(int i = n-1; i >= 0; i--) {
-        s.insert(v[i]);
-        v[i] = int(s.size());
-    }
-    
-    for(int i = 0; i < m; i++) {
-        int num;
-        cin >> num;
-        cout << v[num-1] << newl;
-    }
+    sort(arr, arr+m*n);
+    int mid = m*n/2;
+    int sum = 0;
+    for(int i = 0; i < m*n; i++)
+        sum += abs(arr[i] - arr[mid]);
+    int res = sum / d;
+    cout << res;
 }

@@ -17,6 +17,9 @@
     <a href="https://binarysearch.com/" target="_blank">
         <img src="https://img.shields.io/badge/-Binary-yellow" style="margin: 0 2.5px">
     </a>
+    <a href="https://www.hackerearth.com/" target="_blank">
+        <img src="https://img.shields.io/badge/-HackerEarth-9cf" style="margin: 0 2.5px">
+    </a>
 </p>
 
 Hi. Welcome to my `collection` of problems that I solved on several online programming competitive platforms.
